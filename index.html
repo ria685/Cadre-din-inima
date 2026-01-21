@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
@@ -11,16 +10,20 @@
       color: #5D206B;
       font-family: Inter, sans-serif;
       margin: 0;
+    }
 
-      /* 🌸 flower border */
-      border: 30px solid transparent;
-      border-image: url('bbb.png') 30 round;
+    /* 🌸 FRAME CONTAINER */
+    .frame {
+      background: url('flower.png') no-repeat center;
+      background-size: contain;
+      padding: 80px;              /* space from frame */
+      max-width: 1400px;
+      margin: 2rem auto;
     }
 
     h1 {
-      color: #5D206B;
       text-align: center;
-      margin-top: 2rem;
+      margin-top: 0;
     }
 
     .gallery {
@@ -45,40 +48,39 @@
       font-size: 0.9rem;
       opacity: 0.8;
     }
+
+    /* 📱 mobile safety */
+    @media (max-width: 768px) {
+      .frame {
+        padding: 40px;
+        background-size: cover;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <h1>My work</h1>
+  <div class="frame">
 
-  <section class="gallery">
-    <img src="erika.jpg" alt="Erika">
-    <img src="foto.jpg" alt="Foto">
-    <img src="train.jpg" alt="Train">
-    <img src="m.png" alt="Portrait M">
-    <img src="mm.png" alt="Portrait MM">
-    <img src="mmm.png" alt="Portrait MMM">
-    <img src="mmmm.png" alt="Portrait MMMM">
-    <img src="vlad.png" alt="Vlad">
-    <img src="pisi.png" alt="Cat">
-    <img src="stalp.png" alt="Stalp">
-    <img src="geam.png" alt="Geam">
-    <img src="ee.png" alt="EE">
-    <img src="copac.png" alt="Copac">
-    <img src="ggg.png" alt="GGG">
-    <img src="vvv.jpg" alt="VVV">
-    <img src="eeee.jpg" alt="EEEE">
-    <img src="iiiii.jpg" alt="IIIII">
-  </section>
+    <h1>My work</h1>
 
-  <footer>
-    All pics made by Cristina Schiopu
-  </footer>
-
-</body>
-</html>
-
+    <section class="gallery">
+      <img src="erika.jpg" alt="Erika">
+      <img src="foto.jpg" alt="Foto">
+      <img src="train.jpg" alt="Train">
+      <img src="m.png" alt="Portrait M">
+      <img src="mm.png" alt="Portrait MM">
+      <img src="mmm.png" alt="Portrait MMM">
+      <img src="mmmm.png" alt="Portrait MMMM">
+      <img src="vlad.png" alt="Vlad">
+      <img src="pisi.png" alt="Cat">
+      <img src="stalp.png" alt="Stalp">
+      <img src="geam.png" alt="Geam">
+      <img src="ee.png" alt="EE">
+      <img src="copac.png" alt="Copac">
+      <img src="ggg.png" alt="GGG">
+      <img src="vv
 
 
 
